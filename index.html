@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar-purple">
+    <div class="container d-flex align-items-center">
+        <h3 class="logo-purple">Food Munch 💜</h3>
+        <div class="ml-auto">
+            <span class="nav-white">Home</span>
+            <span class="nav-white">Menu</span>
+            <span class="nav-white">Cart (<span id="navCount">0</span>)</span>
+        </div>
+    </div>
+</nav>
+
+<!-- HERO WHITE -->
+<div class="hero-white text-center">
+    <h1 class="hero-title">Food Munch <span class="heart-red">❤️</span></h1>
+    <p class="hero-sub">Search your food</p>
+    <input type="text" id="searchInput" class="search-white" placeholder="Search Biryani, Pizza... 🔍">
+</div>
+
+<!-- MENU -->
+<div id="menuSection" class="container mt-5 pb-5">
+    <h2 class="text-center menu-title">Our Menu 💜</h2>
+    <div class="text-center mb-4 mt-3">
+        <button class="btn-purple active" onclick="showAll(this)">All</button>
+        <button class="btn-purple" onclick="filterCat('veg', this)">Veg</button>
+        <button class="btn-purple" onclick="filterCat('nonveg', this)">Non-Veg</button>
+        <button class="btn-purple" onclick="filterCat('dessert', this)">Dessert</button>
+    </div>
+    <div class="row" id="foodContainer"></div>
+</div>
+
+<div class="cart-float" onclick="toggleCart()">🛒 <span id="cartCount">0</span> | Rs.<span id="cartTotal1">0</span></div>
+<div id="cartPanel" class="cart-panel">
+    <div class="p-4">
+        <h4 class="cart-title">Your Cart <button class="btn btn-dark btn-sm float-right" onclick="toggleCart()">X</button></h4>
+        <div id="cartItems">Empty</div><hr>
+        <h5>Total: Rs.<span id="cartTotal">0</span></h5>
+        <button class="btn btn-purple-block mt-2" onclick="placeOrder()">Place Order</button>
+        <button class="btn btn-outline-secondary btn-block mt-2" onclick="clearCart()">Clear</button>
+    </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>

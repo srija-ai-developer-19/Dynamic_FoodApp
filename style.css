@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Roboto:wght@400;700&display=swap');
+body{font-family:Roboto; background:#f8f5ff; margin:0; padding-top:65px;}
+
+/* ===== NAVBAR CSS ===== */
+.navbar-purple{
+  background:#6a1b9a;
+  padding:15px 0;
+  position:fixed;
+  top:0; left:0; right:0;
+  width:100%;
+  z-index:9999;
+  box-shadow:0 3px 12px rgba(0,0,0,0.3);
+}
+.logo-purple{color:white; font-family:Bree Serif; font-weight:bold; font-size:26px; margin:0;}
+.nav-white{color:white; font-weight:bold; margin-left:18px; cursor:pointer;}
+
+/* HERO WHITE */
+.hero-white{background:#ffffff; padding:60px 0 50px; border-bottom:4px solid #6a1b9a;}
+.hero-title{color:#6a1b9a; font-family:Bree Serif; font-size:52px; font-weight:bold;}
+.heart-red{color:#e53935;}
+.hero-sub{color:#6a1b9a; font-size:21px; font-weight:500;}
+.search-white{border-radius:30px; border:3px solid #6a1b9a; padding:12px 22px; width:90%; max-width:420px; margin-top:15px; outline:none;}
+
+.menu-title{color:#6a1b9a; font-family:Bree Serif; font-weight:bold; font-size:34px;}
+.btn-purple{background:#6a1b9a; color:white; border:none; border-radius:20px; padding:8px 18px; margin:5px; font-weight:bold;}
+.btn-purple.active{background:#4a148c;}
+.food-card{border-radius:20px; border:2px solid #f3e5f5; overflow:hidden; background:white; transition:0.3s;}
+.food-card:hover{transform:translateY(-8px); box-shadow:0 12px 25px rgba(106,27,154,0.25);}
+.food-img{height:180px; object-fit:cover; width:100%;}
+.price-tag{background:#6a1b9a; color:white; padding:5px 12px; border-radius:12px; font-weight:bold;}
+.cart-float{position:fixed; bottom:20px; right:20px; background:#6a1b9a; color:white; padding:14px 22px; border-radius:50px; font-weight:bold; cursor:pointer; z-index:999;}
+.cart-title{color:#6a1b9a; font-family:Bree Serif; font-weight:bold;}
+.cart-panel{position:fixed; right:-380px; top:0; width:350px; height:100vh; background:white; z-index:10000; transition:0.4s;}
+.cart-panel.open{right:0;}
+.btn-purple-block{background:#6a1b9a; color:white; border:none; width:100%; padding:10px; border-radius:10px; font-weight:bold;}
